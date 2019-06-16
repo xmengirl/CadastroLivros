@@ -17,6 +17,113 @@
     </script>
 </head>
 <body>
-    <!-- TODO: Please edit here -->
+    <div class="container">
+       <div class="row">
+         <div class="col-xs-12">
+           <div id="espacorgba">
+
+      <div class="row">
+         <div class="col-xs-12">
+           <label id="labellivro">Cadastre aqui o seu livro</label>
+         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+            <label id="lb">Titulo:</label><input type="text" class="form-control" id="caixa1">
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="col-xs-12">
+            <label id="lb">Autor:</label><input type="text" class="form-control" id="caixa2">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+            <label id="lb">Ano:</label><input type="text" class="form-control" id="caixa3">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+            <label id="lb">ISBN:</label><input type="text" class="form-control" id="caixa4">
+        </div>
+      </div>
+
+      <div class="row">
+         <div class="col-xs-12">
+            <button class="btn btn-lg btn btn-default" id="cadastrar">Cadastrar</button>
+         </div>
+      </div>
+        
+        <div class="row">
+         <div class="col-xs-12">
+            <a href="listar.html"><img src="img/setadireita.png" id="setinha"></a>
+         </div>
+      </div>
+
+           </div>
+         </div>
+       </div>
+    </div>
+
 </body>
+<style>
+body{
+  background-image: url('../img/cinzadegrade.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#setinha{
+  width: 100px;
+  margin-top: 8%;
+  margin-left: 35%;
+}
+#cadastrar{
+  width: 130px;
+  margin-left: 30%;
+  margin-top: 13%;
+  box-shadow: 10px 10px 9px #4F4F4F;
+} 
+#labellivro{
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 10px;
+  color: black;
+  text-shadow: 0.1em 0.1em 0.3em white;
+}
+#caixa1{
+  width: 300px;
+  box-shadow: 10px 10px 9px grey;
+}
+#caixa2{
+  width: 300px;
+  box-shadow: 10px 10px 9px grey;
+}
+#caixa3{
+  width: 300px;
+  box-shadow: 10px 10px 9px grey;
+}
+#caixa4{
+  width: 300px;
+  box-shadow: 10px 10px 9px grey;
+}
+#lb{
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+#espacorgba{
+  background: rgba(211, 211, 211, 0.4);
+  border-radius: 10px;
+  margin-top: 9%;
+  height: 580px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+</style>
 </html>
