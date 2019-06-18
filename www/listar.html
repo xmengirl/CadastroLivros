@@ -4,15 +4,135 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <link rel="stylesheet" href="components/loader.css">
-    <script src="components/loader.js"></script>
+    <!--JQuery-->
+  <script src="components/loader.js"></script>
+  <script src="components/jquery-3.3.1.min.js"></script>
+  <script src="components/livros.js"></script>
+  <!--CSS da aplicaçao -->
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
     <script>
-        //
-        // TODO: Write JavaScript code here
         //
     </script>
 </head>
 <body>
-    <!-- TODO: Please edit here -->
+    <div class="container">
+      <div class="row">
+      <div class="col-xs-12">
+      <div id="espacorgba">   
+    
+       <div class="row">
+         <div class="col-xs-12">  
+          <center><h1>Listar livros</h1></center>
+        </div>
+      </div>
+    
+    <div class="row">
+      <div class="col-xs-12">
+          <div class="form-group">
+            <center><label id="lv">Livros</label>
+          <select id="listarlivros" class="form-control"></select></center>  
+      </div>
+    </div>
+ </div>
+
+     <div class="row">
+        <div class="col-xs-12">
+          <center><h2 id="dados">Dados dos livros</h2></center>
+        </div>
+     </div>
+
+     <div class="row">
+       <div class="col-xs-12">
+         <center><label>Título:</label>
+         <input type="text" class="form-control" id="caixa1"></center>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col-xs-12">
+         <center><label style="padding-top: 15px;">Autor:</label>
+         <input type="text" class="form-control" id="caixa2"></center>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col-xs-12">
+         <center><label style="padding-top: 15px;">Ano:</label>
+         <input type="text" class="form-control" id="caixa3"></center>
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col-xs-12">
+         <center><label style="padding-top: 15px;">ISBN:</label>
+         <input type="text" class="form-control" id="caixa4"></center>
+       </div>
+     </div>     
+
+    
+     <div class="row" style="margin-top: 10%;">
+       <div class="col-xs-4">
+         <center><img src="img/salvarlivro.png" id="salvar"><br><label>Salvar</label></center>
+       </div>
+
+       <div class="col-xs-4">
+          <center><img src="img/editarlivro2.png" id="editar"><br><label>Editar</label></center>
+       </div>
+
+       <div class="col-xs-4">
+          <center><img src="img/excluirlivro.png" id="excluir"><br><label>Excluir</label></center>
+       </div>
+     </div>
+
+      </div>
+    </div>
+    </div>
 </body>
+<style>
+#caixa1{
+width: 200px;
+box-shadow: 10px 10px 9px;
+}
+#caixa2{
+ width: 200px;
+ box-shadow: 10px 10px 9px;
+}
+#caixa3{
+width: 200px; 
+box-shadow: 10px 10px 9px;
+}
+#caixa4{
+width: 200px;
+box-shadow: 10px 10px 9px;
+}
+#salvar{
+  width: 70px;
+  height: 70px;
+}
+#editar{
+  width: 70px;
+  height: 70px;
+}
+#excluir{
+  width: 70px;
+  height: 70px;
+}
+#dados{
+  padding-bottom: 10px;
+}
+#listarlivros{
+  width: 220px;
+  box-shadow: 10px 10px 9px;
+}
+#espacorgba{
+  width: 340px;
+  heigth: 600px;
+}
+body{
+  background-image: url('../img/bookspage.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
 </html>
